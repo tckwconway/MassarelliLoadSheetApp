@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLoadSheet" targetNamespace="http://tempuri.org/dsLoadSheet.xsd" xmlns:mstns="http://tempuri.org/dsLoadSheet.xsd" xmlns="http://tempuri.org/dsLoadSheet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLoadSheet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsLoadSheet" msprop:Generator_UserDSName="dsLoadSheet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtLoadSheet" msprop:Generator_TableClassName="dtLoadSheetDataTable" msprop:Generator_TableVarName="tabledtLoadSheet" msprop:Generator_TablePropName="dtLoadSheet" msprop:Generator_RowDeletingName="dtLoadSheetRowDeleting" msprop:Generator_RowChangingName="dtLoadSheetRowChanging" msprop:Generator_RowEvHandlerName="dtLoadSheetRowChangeEventHandler" msprop:Generator_RowDeletedName="dtLoadSheetRowDeleted" msprop:Generator_UserTableName="dtLoadSheet" msprop:Generator_RowChangedName="dtLoadSheetRowChanged" msprop:Generator_RowEvArgName="dtLoadSheetRowChangeEvent" msprop:Generator_RowClassName="dtLoadSheetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="load_sheet_no" msprop:Generator_ColumnVarNameInTable="columnload_sheet_no" msprop:Generator_ColumnPropNameInRow="load_sheet_no" msprop:Generator_ColumnPropNameInTable="load_sheet_noColumn" msprop:Generator_UserColumnName="load_sheet_no" type="xs:string" minOccurs="0" />
+              <xs:element name="ord_no" msprop:Generator_ColumnVarNameInTable="columnord_no" msprop:Generator_ColumnPropNameInRow="ord_no" msprop:Generator_ColumnPropNameInTable="ord_noColumn" msprop:Generator_UserColumnName="ord_no" type="xs:string" minOccurs="0" />
+              <xs:element name="ship_to_name" msprop:Generator_ColumnVarNameInTable="columnship_to_name" msprop:Generator_ColumnPropNameInRow="ship_to_name" msprop:Generator_ColumnPropNameInTable="ship_to_nameColumn" msprop:Generator_UserColumnName="ship_to_name" type="xs:string" minOccurs="0" />
+              <xs:element name="ship_to_addr" msprop:Generator_ColumnVarNameInTable="columnship_to_addr" msprop:Generator_ColumnPropNameInRow="ship_to_addr" msprop:Generator_ColumnPropNameInTable="ship_to_addrColumn" msprop:Generator_UserColumnName="ship_to_addr" type="xs:string" minOccurs="0" />
+              <xs:element name="loc_desc" msprop:Generator_ColumnVarNameInTable="columnloc_desc" msprop:Generator_ColumnPropNameInRow="loc_desc" msprop:Generator_ColumnPropNameInTable="loc_descColumn" msprop:Generator_UserColumnName="loc_desc" type="xs:string" minOccurs="0" />
+              <xs:element name="pallet_qty" msprop:Generator_ColumnVarNameInTable="columnpallet_qty" msprop:Generator_ColumnPropNameInRow="pallet_qty" msprop:Generator_ColumnPropNameInTable="pallet_qtyColumn" msprop:Generator_UserColumnName="pallet_qty" type="xs:string" minOccurs="0" />
+              <xs:element name="ship_via_cd" msprop:Generator_ColumnVarNameInTable="columnship_via_cd" msprop:Generator_ColumnPropNameInRow="ship_via_cd" msprop:Generator_ColumnPropNameInTable="ship_via_cdColumn" msprop:Generator_UserColumnName="ship_via_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="pro_number" msprop:Generator_ColumnVarNameInTable="columnpro_number" msprop:Generator_ColumnPropNameInRow="pro_number" msprop:Generator_ColumnPropNameInTable="pro_numberColumn" msprop:Generator_UserColumnName="pro_number" type="xs:string" minOccurs="0" />
+              <xs:element name="create_dt" msprop:Generator_ColumnVarNameInTable="columncreate_dt" msprop:Generator_ColumnPropNameInRow="create_dt" msprop:Generator_ColumnPropNameInTable="create_dtColumn" msprop:Generator_UserColumnName="create_dt" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

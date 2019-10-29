@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MassarelliLoadSheetApp", "MassarelliLoadSheetApp\MassarelliLoadSheetApp.vbproj", "{9018F54F-130C-44DB-96D3-F0399106B775}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DACLoadSheet", "DACLoadSheet\DACLoadSheet.vbproj", "{085B3719-8906-4314-8CAB-7FCB8FD9453A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Debug|x86.ActiveCfg = Debug|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Debug|x86.Build.0 = Debug|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Release|Any CPU.ActiveCfg = Release|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Release|Mixed Platforms.Build.0 = Release|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Release|x86.ActiveCfg = Release|x86
+		{9018F54F-130C-44DB-96D3-F0399106B775}.Release|x86.Build.0 = Release|x86
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{085B3719-8906-4314-8CAB-7FCB8FD9453A}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
