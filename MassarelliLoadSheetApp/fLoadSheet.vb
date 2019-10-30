@@ -41,7 +41,7 @@ Public Class fLoadSheet
 
 
     Private Sub fLoadSheet_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-        MacStartup("DATA")
+        MacStartup()
         LoadDataGridView()
         LINQ_GetShipViaList()
         With tbOrderNo

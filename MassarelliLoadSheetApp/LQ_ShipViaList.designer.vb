@@ -31,14 +31,14 @@ Partial Public Class LQ_ShipViaListDataContext
   #Region "Extensibility Method Definitions"
   Partial Private Sub OnCreated()
   End Sub
-  #End Region
-	
-	Public Sub New()
-		MyBase.New(Global.MassarelliLoadSheetApp.My.MySettings.Default.DATAConnectionString1, mappingSource)
-		OnCreated
-	End Sub
-	
-	Public Sub New(ByVal connection As String)
+#End Region
+
+    'Public Sub New()
+    '	MyBase.New(Global.MassarelliLoadSheetApp.My.MySettings.Default.DATAConnectionString1, mappingSource)
+    '	OnCreated
+    'End Sub
+
+    Public Sub New(ByVal connection As String)
 		MyBase.New(connection, mappingSource)
 		OnCreated
 	End Sub
