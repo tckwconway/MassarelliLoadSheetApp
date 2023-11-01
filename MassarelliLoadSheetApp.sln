@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MassarelliLoadSheetApp", "MassarelliLoadSheetApp\MassarelliLoadSheetApp.vbproj", "{9018F54F-130C-44DB-96D3-F0399106B775}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DACLoadSheet", "DACLoadSheet\DACLoadSheet.vbproj", "{085B3719-8906-4314-8CAB-7FCB8FD9453A}"
@@ -38,5 +40,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5FE68CA-F1DD-4AA0-B4EC-E17090471ECF}
 	EndGlobalSection
 EndGlobal

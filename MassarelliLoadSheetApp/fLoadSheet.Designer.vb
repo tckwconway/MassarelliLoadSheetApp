@@ -81,10 +81,9 @@ Partial Class fLoadSheet
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblPricingType, Me.lblDivider1, Me.lblCount, Me.lblDivider2, Me.lblCurrentDB, Me.lblDivider3, Me.lblDefaultDB})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 772)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 623)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1259, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(944, 22)
         Me.StatusStrip1.TabIndex = 61
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -140,29 +139,26 @@ Partial Class fLoadSheet
         '
         'tbPreviewPath
         '
-        Me.tbPreviewPath.Location = New System.Drawing.Point(1603, 690)
-        Me.tbPreviewPath.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbPreviewPath.Location = New System.Drawing.Point(1202, 561)
         Me.tbPreviewPath.Name = "tbPreviewPath"
-        Me.tbPreviewPath.Size = New System.Drawing.Size(67, 22)
+        Me.tbPreviewPath.Size = New System.Drawing.Size(51, 20)
         Me.tbPreviewPath.TabIndex = 68
         Me.tbPreviewPath.Visible = False
         '
         'tbDataPath
         '
-        Me.tbDataPath.Location = New System.Drawing.Point(1603, 722)
-        Me.tbDataPath.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbDataPath.Location = New System.Drawing.Point(1202, 587)
         Me.tbDataPath.Name = "tbDataPath"
-        Me.tbDataPath.Size = New System.Drawing.Size(67, 22)
+        Me.tbDataPath.Size = New System.Drawing.Size(51, 20)
         Me.tbDataPath.TabIndex = 69
         Me.tbDataPath.Visible = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(1501, 697)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(1126, 566)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 17)
+        Me.Label3.Size = New System.Drawing.Size(70, 13)
         Me.Label3.TabIndex = 70
         Me.Label3.Text = "Preview Path"
         Me.Label3.Visible = False
@@ -170,10 +166,9 @@ Partial Class fLoadSheet
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(1501, 731)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(1126, 594)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 17)
+        Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 71
         Me.Label4.Text = "Data Path"
         Me.Label4.Visible = False
@@ -184,9 +179,8 @@ Partial Class fLoadSheet
         Me.Panel3.Controls.Add(Me.Panel1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1259, 772)
+        Me.Panel3.Size = New System.Drawing.Size(944, 623)
         Me.Panel3.TabIndex = 80
         '
         'DataGridView1
@@ -196,28 +190,27 @@ Partial Class fLoadSheet
         Me.DataGridView1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 222)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 180)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1259, 550)
+        Me.DataGridView1.Size = New System.Drawing.Size(944, 443)
         Me.DataGridView1.TabIndex = 0
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RemoveRowToolStripMenuItem, Me.InsertCustomerCommentToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(251, 52)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(216, 48)
         '
         'RemoveRowToolStripMenuItem
         '
         Me.RemoveRowToolStripMenuItem.Name = "RemoveRowToolStripMenuItem"
-        Me.RemoveRowToolStripMenuItem.Size = New System.Drawing.Size(250, 24)
+        Me.RemoveRowToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
         Me.RemoveRowToolStripMenuItem.Text = "Remove Row"
         '
         'InsertCustomerCommentToolStripMenuItem
         '
         Me.InsertCustomerCommentToolStripMenuItem.Name = "InsertCustomerCommentToolStripMenuItem"
-        Me.InsertCustomerCommentToolStripMenuItem.Size = New System.Drawing.Size(250, 24)
+        Me.InsertCustomerCommentToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
         Me.InsertCustomerCommentToolStripMenuItem.Text = "Insert Customer Comment"
         '
         'Panel1
@@ -226,11 +219,10 @@ Partial Class fLoadSheet
         Me.Panel1.Controls.Add(Me.Panel5)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Font = New System.Drawing.Font("KaiTi", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1259, 222)
+        Me.Panel1.Size = New System.Drawing.Size(944, 180)
         Me.Panel1.TabIndex = 85
         '
         'Panel2
@@ -239,17 +231,19 @@ Partial Class fLoadSheet
         Me.Panel2.Controls.Add(Me.btnClearAll)
         Me.Panel2.Controls.Add(Me.btnSearch)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(1137, 0)
+        Me.Panel2.Location = New System.Drawing.Point(854, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(122, 222)
+        Me.Panel2.Size = New System.Drawing.Size(90, 180)
         Me.Panel2.TabIndex = 104
         '
         'btnClearAll
         '
         Me.btnClearAll.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.btnClearAll.Location = New System.Drawing.Point(9, 160)
+        Me.btnClearAll.Location = New System.Drawing.Point(7, 130)
+        Me.btnClearAll.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClearAll.Name = "btnClearAll"
-        Me.btnClearAll.Size = New System.Drawing.Size(100, 46)
+        Me.btnClearAll.Size = New System.Drawing.Size(75, 37)
         Me.btnClearAll.TabIndex = 105
         Me.btnClearAll.Text = "Clear"
         Me.btnClearAll.UseVisualStyleBackColor = True
@@ -257,9 +251,10 @@ Partial Class fLoadSheet
         'btnSearch
         '
         Me.btnSearch.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSearch.Location = New System.Drawing.Point(9, 106)
+        Me.btnSearch.Location = New System.Drawing.Point(7, 86)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(100, 46)
+        Me.btnSearch.Size = New System.Drawing.Size(75, 37)
         Me.btnSearch.TabIndex = 104
         Me.btnSearch.Text = "Find"
         Me.btnSearch.UseVisualStyleBackColor = True
@@ -282,29 +277,31 @@ Partial Class fLoadSheet
         Me.Panel5.Controls.Add(Me.lblPallets)
         Me.Panel5.Controls.Add(Me.tbCrateQtyBackField)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel5.Location = New System.Drawing.Point(463, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel5.Location = New System.Drawing.Point(348, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(674, 222)
+        Me.Panel5.Size = New System.Drawing.Size(506, 180)
         Me.Panel5.TabIndex = 88
         '
         'btnPrint
         '
         Me.btnPrint.Enabled = False
         Me.btnPrint.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.btnPrint.Location = New System.Drawing.Point(565, 160)
+        Me.btnPrint.Location = New System.Drawing.Point(424, 130)
+        Me.btnPrint.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Size = New System.Drawing.Size(100, 46)
+        Me.btnPrint.Size = New System.Drawing.Size(75, 37)
         Me.btnPrint.TabIndex = 107
         Me.btnPrint.Text = "Print"
         Me.btnPrint.UseVisualStyleBackColor = True
         '
         'btnSave
         '
+        Me.btnSave.Enabled = False
         Me.btnSave.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSave.Location = New System.Drawing.Point(455, 160)
+        Me.btnSave.Location = New System.Drawing.Point(341, 130)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(100, 46)
+        Me.btnSave.Size = New System.Drawing.Size(75, 37)
         Me.btnSave.TabIndex = 98
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -313,84 +310,78 @@ Partial Class fLoadSheet
         '
         Me.lblLocation.AutoSize = True
         Me.lblLocation.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.lblLocation.Location = New System.Drawing.Point(263, 165)
-        Me.lblLocation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblLocation.Location = New System.Drawing.Point(197, 134)
         Me.lblLocation.Name = "lblLocation"
-        Me.lblLocation.Size = New System.Drawing.Size(113, 35)
+        Me.lblLocation.Size = New System.Drawing.Size(89, 28)
         Me.lblLocation.TabIndex = 97
         Me.lblLocation.Text = "Location"
         '
         'tbLocation
         '
         Me.tbLocation.BackColor = System.Drawing.SystemColors.Window
-        Me.tbLocation.Location = New System.Drawing.Point(19, 164)
-        Me.tbLocation.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbLocation.Location = New System.Drawing.Point(14, 133)
         Me.tbLocation.Multiline = True
         Me.tbLocation.Name = "tbLocation"
         Me.tbLocation.ReadOnly = True
-        Me.tbLocation.Size = New System.Drawing.Size(242, 37)
+        Me.tbLocation.Size = New System.Drawing.Size(182, 31)
         Me.tbLocation.TabIndex = 2
         Me.tbLocation.TabStop = False
         '
         'btnClear
         '
-        Me.btnClear.Font = New System.Drawing.Font("KaiTi", 10.75!)
-        Me.btnClear.Location = New System.Drawing.Point(226, 17)
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.75!)
+        Me.btnClear.Location = New System.Drawing.Point(170, 14)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(35, 31)
+        Me.btnClear.Size = New System.Drawing.Size(26, 25)
         Me.btnClear.TabIndex = 95
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'tbShipToLocation
         '
         Me.tbShipToLocation.BackColor = System.Drawing.SystemColors.Window
-        Me.tbShipToLocation.Location = New System.Drawing.Point(19, 115)
-        Me.tbShipToLocation.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbShipToLocation.Location = New System.Drawing.Point(14, 93)
         Me.tbShipToLocation.Multiline = True
         Me.tbShipToLocation.Name = "tbShipToLocation"
         Me.tbShipToLocation.ReadOnly = True
-        Me.tbShipToLocation.Size = New System.Drawing.Size(357, 37)
+        Me.tbShipToLocation.Size = New System.Drawing.Size(269, 31)
         Me.tbShipToLocation.TabIndex = 94
         Me.tbShipToLocation.TabStop = False
         '
         'tbShipToName
         '
         Me.tbShipToName.BackColor = System.Drawing.SystemColors.Window
-        Me.tbShipToName.Location = New System.Drawing.Point(19, 66)
-        Me.tbShipToName.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbShipToName.Location = New System.Drawing.Point(14, 54)
         Me.tbShipToName.Multiline = True
         Me.tbShipToName.Name = "tbShipToName"
         Me.tbShipToName.ReadOnly = True
-        Me.tbShipToName.Size = New System.Drawing.Size(357, 37)
+        Me.tbShipToName.Size = New System.Drawing.Size(269, 31)
         Me.tbShipToName.TabIndex = 93
         Me.tbShipToName.TabStop = False
         '
         'tbProNumber
         '
-        Me.tbProNumber.Location = New System.Drawing.Point(383, 19)
-        Me.tbProNumber.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbProNumber.Location = New System.Drawing.Point(287, 15)
         Me.tbProNumber.Name = "tbProNumber"
-        Me.tbProNumber.Size = New System.Drawing.Size(172, 37)
+        Me.tbProNumber.Size = New System.Drawing.Size(130, 31)
         Me.tbProNumber.TabIndex = 1
         '
         'tbOrderNo
         '
         Me.tbOrderNo.AcceptsTab = True
-        Me.tbOrderNo.Location = New System.Drawing.Point(19, 19)
-        Me.tbOrderNo.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbOrderNo.Location = New System.Drawing.Point(14, 15)
         Me.tbOrderNo.Multiline = True
         Me.tbOrderNo.Name = "tbOrderNo"
-        Me.tbOrderNo.Size = New System.Drawing.Size(207, 37)
+        Me.tbOrderNo.Size = New System.Drawing.Size(156, 31)
         Me.tbOrderNo.TabIndex = 0
         '
         'lblOrderNo
         '
         Me.lblOrderNo.AutoSize = True
         Me.lblOrderNo.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.lblOrderNo.Location = New System.Drawing.Point(263, 19)
-        Me.lblOrderNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblOrderNo.Location = New System.Drawing.Point(197, 15)
         Me.lblOrderNo.Name = "lblOrderNo"
-        Me.lblOrderNo.Size = New System.Drawing.Size(102, 35)
+        Me.lblOrderNo.Size = New System.Drawing.Size(82, 28)
         Me.lblOrderNo.TabIndex = 90
         Me.lblOrderNo.Text = "Order #"
         '
@@ -398,10 +389,9 @@ Partial Class fLoadSheet
         '
         Me.lblProNo.AutoSize = True
         Me.lblProNo.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.lblProNo.Location = New System.Drawing.Point(559, 19)
-        Me.lblProNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblProNo.Location = New System.Drawing.Point(419, 15)
         Me.lblProNo.Name = "lblProNo"
-        Me.lblProNo.Size = New System.Drawing.Size(76, 35)
+        Me.lblProNo.Size = New System.Drawing.Size(61, 28)
         Me.lblProNo.TabIndex = 89
         Me.lblProNo.Text = "Pro #"
         '
@@ -409,12 +399,11 @@ Partial Class fLoadSheet
         '
         Me.tbCrateQty.BackColor = System.Drawing.SystemColors.Window
         Me.tbCrateQty.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbCrateQty.Font = New System.Drawing.Font("KaiTi", 36.0!)
-        Me.tbCrateQty.Location = New System.Drawing.Point(465, 78)
-        Me.tbCrateQty.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbCrateQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!)
+        Me.tbCrateQty.Location = New System.Drawing.Point(349, 63)
         Me.tbCrateQty.Multiline = True
         Me.tbCrateQty.Name = "tbCrateQty"
-        Me.tbCrateQty.Size = New System.Drawing.Size(78, 67)
+        Me.tbCrateQty.Size = New System.Drawing.Size(58, 54)
         Me.tbCrateQty.TabIndex = 3
         Me.tbCrateQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -422,10 +411,9 @@ Partial Class fLoadSheet
         '
         Me.lblPallets.AutoSize = True
         Me.lblPallets.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.lblPallets.Location = New System.Drawing.Point(559, 67)
-        Me.lblPallets.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblPallets.Location = New System.Drawing.Point(419, 54)
         Me.lblPallets.Name = "lblPallets"
-        Me.lblPallets.Size = New System.Drawing.Size(89, 35)
+        Me.lblPallets.Size = New System.Drawing.Size(70, 28)
         Me.lblPallets.TabIndex = 88
         Me.lblPallets.Text = "Pallets"
         '
@@ -433,12 +421,11 @@ Partial Class fLoadSheet
         '
         Me.tbCrateQtyBackField.BackColor = System.Drawing.SystemColors.Window
         Me.tbCrateQtyBackField.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold)
-        Me.tbCrateQtyBackField.Location = New System.Drawing.Point(455, 66)
-        Me.tbCrateQtyBackField.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbCrateQtyBackField.Location = New System.Drawing.Point(341, 54)
         Me.tbCrateQtyBackField.Multiline = True
         Me.tbCrateQtyBackField.Name = "tbCrateQtyBackField"
         Me.tbCrateQtyBackField.ReadOnly = True
-        Me.tbCrateQtyBackField.Size = New System.Drawing.Size(100, 86)
+        Me.tbCrateQtyBackField.Size = New System.Drawing.Size(76, 71)
         Me.tbCrateQtyBackField.TabIndex = 86
         Me.tbCrateQtyBackField.TabStop = False
         Me.tbCrateQtyBackField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -451,21 +438,19 @@ Partial Class fLoadSheet
         Me.Panel4.Controls.Add(Me.cboShipVia)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(463, 222)
+        Me.Panel4.Size = New System.Drawing.Size(348, 180)
         Me.Panel4.TabIndex = 87
         '
         'txtShipViaCode
         '
         Me.txtShipViaCode.BackColor = System.Drawing.SystemColors.Window
-        Me.txtShipViaCode.Font = New System.Drawing.Font("KaiTi", 62.0!)
-        Me.txtShipViaCode.Location = New System.Drawing.Point(19, 66)
-        Me.txtShipViaCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtShipViaCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 62.0!)
+        Me.txtShipViaCode.Location = New System.Drawing.Point(14, 54)
         Me.txtShipViaCode.Multiline = True
         Me.txtShipViaCode.Name = "txtShipViaCode"
         Me.txtShipViaCode.ReadOnly = True
-        Me.txtShipViaCode.Size = New System.Drawing.Size(315, 132)
+        Me.txtShipViaCode.Size = New System.Drawing.Size(237, 108)
         Me.txtShipViaCode.TabIndex = 89
         Me.txtShipViaCode.TabStop = False
         Me.txtShipViaCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -475,10 +460,9 @@ Partial Class fLoadSheet
         Me.lblShipVia.AutoSize = True
         Me.lblShipVia.BackColor = System.Drawing.SystemColors.Control
         Me.lblShipVia.Font = New System.Drawing.Font("Segoe UI Semibold", 14.5!, System.Drawing.FontStyle.Bold)
-        Me.lblShipVia.Location = New System.Drawing.Point(337, 20)
-        Me.lblShipVia.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblShipVia.Location = New System.Drawing.Point(253, 16)
         Me.lblShipVia.Name = "lblShipVia"
-        Me.lblShipVia.Size = New System.Drawing.Size(109, 35)
+        Me.lblShipVia.Size = New System.Drawing.Size(86, 28)
         Me.lblShipVia.TabIndex = 88
         Me.lblShipVia.Text = "Ship Via"
         '
@@ -487,12 +471,11 @@ Partial Class fLoadSheet
         Me.cboShipVia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cboShipVia.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboShipVia.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.cboShipVia.Font = New System.Drawing.Font("KaiTi", 15.0!)
+        Me.cboShipVia.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.cboShipVia.FormattingEnabled = True
-        Me.cboShipVia.Location = New System.Drawing.Point(17, 21)
-        Me.cboShipVia.Margin = New System.Windows.Forms.Padding(4)
+        Me.cboShipVia.Location = New System.Drawing.Point(13, 17)
         Me.cboShipVia.Name = "cboShipVia"
-        Me.cboShipVia.Size = New System.Drawing.Size(315, 33)
+        Me.cboShipVia.Size = New System.Drawing.Size(237, 33)
         Me.cboShipVia.TabIndex = 0
         '
         'Timer3
@@ -500,9 +483,9 @@ Partial Class fLoadSheet
         '
         'fLoadSheet
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1259, 794)
+        Me.ClientSize = New System.Drawing.Size(944, 645)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -510,7 +493,6 @@ Partial Class fLoadSheet
         Me.Controls.Add(Me.tbPreviewPath)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "fLoadSheet"
         Me.Text = "Load Sheet"
         Me.StatusStrip1.ResumeLayout(False)

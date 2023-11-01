@@ -1,19 +1,19 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
-'Imports SystemAcctSetting
-Imports System.Text
-Imports System.ComponentModel
-Imports System.Linq
-Imports System.Linq.Expressions
-Imports System.Globalization
-Imports System.Data.Common
-Imports System.Collections.Generic
+﻿'Imports System.Data
+'Imports System.Data.SqlClient
+''Imports SystemAcctSetting
+'Imports System.Text
+'Imports System.ComponentModel
+'Imports System.Linq
+'Imports System.Linq.Expressions
+'Imports System.Globalization
+'Imports System.Data.Common
+'Imports System.Collections.Generic
 
 Imports CrystalDecisions.CrystalReports.Engine
-Imports CrystalDecisions.CrystalReports.Engine.ReportClass
-Imports CrystalDecisions.Shared
-Imports CrystalDecisions.ReportSource
-Imports CrystalDecisions.CrystalReports.ViewerObjectModel
+'Imports CrystalDecisions.CrystalReports.Engine.ReportClass
+'Imports CrystalDecisions.Shared
+'Imports CrystalDecisions.ReportSource
+'Imports CrystalDecisions.CrystalReports.ViewerObjectModel
 Imports CrystalDecisions.Windows.Forms
 
 
@@ -616,9 +616,10 @@ Public Class fLoadSheet
             End If
             loadsheet.CrateQty = txt.Text.Replace(Chr(13), "")
             PopulateDataGridView(dgv)
+
+            btnSave.Enabled = True
+            btnPrint.Enabled = False
         End If
-        btnSave.Enabled = True
-        btnPrint.Enabled = False
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As System.EventArgs) Handles Timer3.Tick
@@ -680,16 +681,16 @@ Public Class fLoadSheet
         DataGridView1.AutoResizeRow(e.RowIndex, DataGridViewAutoSizeRowMode.AllCellsExceptHeader)
     End Sub
 
-    Private Sub DataGridView1_CurrentCellDirtyStateChanged(sender As Object, e As System.EventArgs) Handles DataGridView1.CurrentCellDirtyStateChanged
-        btnPrint.Enabled = False
-        btnSave.Enabled = True
-    End Sub
+    'Private Sub DataGridView1_CurrentCellDirtyStateChanged(sender As Object, e As System.EventArgs) Handles DataGridView1.CurrentCellDirtyStateChanged
+    '    'btnPrint.Enabled = False
+    '    'btnSave.Enabled = True
+    'End Sub
 
     Private Sub DataGridView1_EditingControlShowing(sender As Object, e As System.Windows.Forms.DataGridViewEditingControlShowingEventArgs) Handles DataGridView1.EditingControlShowing
         If Me.DataGridView1.CurrentCell.ColumnIndex = 0 And Not e.Control Is Nothing Then
             Dim tb As TextBox = CType(e.Control, TextBox)
             AddHandler (tb.KeyDown), AddressOf TextBox_KeyDown
-            'AddHandler (tb.KeyPress), AddressOf TextBox_KeyPress
+
         End If
 
     End Sub
@@ -702,10 +703,10 @@ Public Class fLoadSheet
         End If
     End Sub
 
-    Private Sub TextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
-        'e.Handled = flag
-        'flag = False
-    End Sub
+    'Private Sub TextBox_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
+    '    'e.Handled = flag
+    '    'flag = False
+    'End Sub
 
     Private Sub DataGridView1_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles DataGridView1.KeyDown
         If e.KeyCode = Keys.Escape Then
@@ -741,29 +742,34 @@ Public Class fLoadSheet
     End Function
 
     Public Sub PreviewReport(LoadSheetNo As String)
-        'Dim rptviewer As CrystalReportViewer
-        Dim rptdoc = New ReportDocument
 
-        Cursor = Cursors.WaitCursor
         Try
+            Dim rptdoc = New ReportDocument
+
+            Cursor = Cursors.WaitCursor
 
             rptdoc.Load(App_Path() & "LoadSheetReport.rpt")
+
             rptdoc.RecordSelectionFormula = "{OELOADSHEET_MAS.load_sheet_no} = '" & loadsheet.LoadSheet & "'"
-            rptdoc.SetDatabaseLogon("sa", "STMARTIN")
+            rptdoc.SetDatabaseLogon("sa", "C@sT1nST0nE")
+
+            Dim crv As New CRViewer
+
+            With crv.crLoadSheetViewer
+                .ToolPanelView = ToolPanelViewType.None
+                .AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+                .AutoSize = True
+                .SelectionFormula = "{OELOADSHEET_MAS.load_sheet_no} = '" & loadsheet.LoadSheet & "'"
+                .ReportSource = rptdoc
+            End With
+            crv.Show()
+
         Catch ex As Exception
 
             MsgBox("The Load Sheet report was not found.  The Load Sheet Report, LoadSheetReport.rpt, must be located at " & Application.StartupPath & ".  ", MsgBoxStyle.OkOnly, "Load Sheet Report on Network Drive not found.")
+            MsgBox(Application.StartupPath & " - " & ex.Message)
             Cursor = Cursors.Default
         End Try
-
-        With CRViewer.crLoadSheetViewer
-            .ToolPanelView = ToolPanelViewType.None
-            .AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-            .AutoSize = True
-            .SelectionFormula = "{OELOADSHEET_MAS.load_sheet_no} = '" & loadsheet.LoadSheet & "'"
-            .ReportSource = rptdoc
-        End With
-        CRViewer.Show()
 
         Cursor = Cursors.Default
 
@@ -779,6 +785,7 @@ Public Class fLoadSheet
             Cursor = Cursors.Default
         End Try
         Cursor = Cursors.Default
+
     End Sub
 
     Private Sub btnSearch_Click(sender As System.Object, e As System.EventArgs) Handles btnSearch.Click
@@ -791,7 +798,7 @@ Public Class fLoadSheet
         ClearControls()
         txtShipViaCode.Text = ""
         cboShipVia.SelectedIndex = -1
-        btnSave.Enabled = True
+        btnSave.Enabled = False
         btnPrint.Enabled = False
     End Sub
 
@@ -818,13 +825,6 @@ Public Class fLoadSheet
 
     End Sub
 
-    Private Sub tbCrateQty_TextChanged(sender As System.Object, e As System.EventArgs) Handles tbCrateQty.TextChanged
-
-    End Sub
-
-    Private Sub tbOrderNo_TextChanged(sender As System.Object, e As System.EventArgs) Handles tbOrderNo.TextChanged
-
-    End Sub
 End Class
 
 Public Class LoadSheetData

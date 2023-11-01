@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 ''' <summary>
-''' Data Access for PAS System
+''' Data Access for Massarelli Load Sheet App
+''' 
 ''' </summary>
 ''' <remarks></remarks>
 
@@ -32,31 +33,6 @@ Public Class DAC
 
     End Function
 
-    'Public Shared Function ExecuteSP(ByVal storedprocedure As String, _
-    'ByVal cn As SqlConnection, ByVal ParamArray arrParam() As SqlParameter) As Object
-    '    Dim cmd As New SqlCommand
-    '    Dim o As String
-    '    cmd.Connection = cn
-    '    cmd.CommandType = CommandType.StoredProcedure
-    '    cmd.CommandText = storedprocedure
-    '    cmd.Parameters.Clear()
-    '    Dim i As Integer = 0
-    '    If arrParam IsNot Nothing Then
-    '        For Each param As SqlParameter In arrParam
-    '            Debug.Print(CStr(arrParam(i).Value))
-    '            cmd.Parameters.Add(param)
-    '            i = i + 1
-    '        Next
-    '    End If
-
-    '    o = cmd.ExecuteNonQuery()
-    '    'Dim ReturnValue As String
-    '    'Dim retval As String = "oNewKey"
-    '    'ReturnValue = cmd.Parameters(retval).Value.ToString
-    '    'Return ReturnValue
-    '    Return o
-
-    'End Function
     Public Shared Function ExecuteSaveSP(ByVal storedprocedure As String, _
    ByVal cn As SqlConnection, ByVal ParamArray arrParam() As SqlParameter) As Object
         Dim cmd As New SqlCommand
@@ -103,10 +79,7 @@ Public Class DAC
         Dim rd As SqlDataReader
 
         rd = cmd.ExecuteReader
-        'Dim ReturnValue As String
-        'Dim retval As String = "oNewKey"
-        'ReturnValue = cmd.Parameters(retval).Value
-        'Return ReturnValue
+
         Return rd
 
     End Function

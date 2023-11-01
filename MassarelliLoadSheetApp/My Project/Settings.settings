@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="DefaultServer" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">mass-sql1</Value>
+      <Value Profile="(Default)">mass-sql2</Value>
     </Setting>
     <Setting Name="DefaultDB" Type="System.String" Scope="User">
       <Value Profile="(Default)">DATA</Value>
